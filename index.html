@@ -4,11 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Clock</title>
+    <link rel="stylesheet" href="src/styles.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.31.0/moment-with-locales.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.46/moment-timezone-with-data.min.js"></script>
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div id="clock-container">
+      <h1>World Clock</h1>
+
+      <select id="cities">
+        <option value="">Select a City</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/London">London</option>
+        <option value="Asia/Tokyo">Tokyo</option>
+        <option value="Australia/Sydney">Sydney</option>
+      </select>
+
+      <div class="city">
+        <h2>Oklahoma City</h2>
+        <div id="date">October 26, 2026</div>
+        <div id="time">12:00:00 PM</div>
+      </div>
+      <div class="city">
+        <h2>Los Angeles</h2>
+        <div id="date">October 26, 2026</div>
+        <div id="time">12:00:00 PM</div>
+      </div>
+    </div>
+
     <footer>
       This project was coded by Eden Tetreault and is
       <a href="https://github.com/mrstetreault/WorldClock.ET" target="_blank"
