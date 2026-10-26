@@ -1,7 +1,61 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.clock-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 30px 0;
+  border-bottom: 1px dashed #ccc;
+}
+.city:last-child {
+  border-bottom: none;
+}
+.time {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  line-height: 36px;
+  vertical-align: center;
+}
+
+.date {
+  opacity: 0.7;
+}
+
 h1 {
   text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+h2 {
+  margin: 0;
+  margin: 0 0 10px;
+  font-size: 28px;
 }
 
 footer {
   text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.6);
 }
